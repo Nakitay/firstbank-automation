@@ -33,13 +33,7 @@ jobs:
       
       env:
         GITHUB_TOKEN: ${{ github.token }}
+  
         
-         - name: Generate Allure Report
-        run: mvn allure:report
-
-      - name: Upload Allure Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report
-          path: target/site/allure-maven-plugin
+  
     
