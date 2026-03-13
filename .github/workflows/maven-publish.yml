@@ -29,6 +29,6 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Run test
-      run: mvn cleaan test
+      run: mvn clean test
       env:
         GITHUB_TOKEN: ${{ github.token }}
